@@ -6,7 +6,7 @@ function Navbar() {
     <div>
         <nav>
             <div className="logo">
-                <img src="/images/Nike-Logo.png" alt="" />
+                <img src="\images\nike logo.webp" alt="" />
             </div>
             <ul>
                 <li href="#">Menu</li>
