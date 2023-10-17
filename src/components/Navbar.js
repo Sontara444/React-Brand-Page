@@ -4,7 +4,7 @@ import React from 'react'
 function Navbar() {
   return (
     <div>
-        <nav>
+        <nav className='container'>
             <div className="logo">
                 <img src="\images\nike logo.webp" alt="" />
             </div>

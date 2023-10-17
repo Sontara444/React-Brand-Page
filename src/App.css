@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap');
 
+/* # Navbar section styling */
 :root{
     --red:#d01c28;
     -gray: #2e2e2e;
@@ -27,14 +28,16 @@ button{
     width: 100px;
     height: 65px;
     /* padding: 6px 16px; */
-    
+}
+
+.container{
+    margin:  0 auto;
+    max-width: 1280px;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
-    max-width: 1280px;
-    margin:  0 auto;
     height:  72px;
     align-items: center;
 }
@@ -43,4 +46,79 @@ nav ul{
     display: flex;
     list-style: none;
     gap: 24px;
+}
+
+/* # hero section styling */
+
+.hero{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 72px);
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.hero h1{
+    font-weight: 800;
+    font-size: 108px;
+    line-height: 102px;
+}
+
+.hero p{
+    font-weight: 600;
+    color: var(--gray);
+    text-transform: capitalize;
+    max-width: 400px;
+}
+
+.brand-icons{
+    display: flex;
+    gap: 16px;
+}
+
+.amazon{
+    width: 40px;
+}
+.flipkart{
+    width: 40px;
+}
+
+.hero-btn{
+    display: flex;
+    gap: 40px;
+}
+
+
+.primary-btn{
+    all: unset;
+    padding: 6px 16px;
+    background: var(--red);
+    height: 32px;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.secondary-btn{
+    all: unset;
+    padding: 6px 16px;
+    background: transparent;
+    font-weight: 500;
+    height: 32px;
+    color: var(--gary);
+    border: 1px solid gray;
+    font-size: 24px;
+
+}
+.shopping{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.shoes{
+    width: 700px;
 }
