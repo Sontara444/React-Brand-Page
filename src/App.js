@@ -11,7 +11,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HeroSection />}></Route>
-          <Route path="/Login" element={<LoginSignup />}></Route>
+          <Route path="LoginSignup" element={<LoginSignup />}></Route>
         </Routes>
       </Router>
     </div>

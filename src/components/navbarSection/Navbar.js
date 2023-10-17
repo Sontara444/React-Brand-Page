@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import LoginSignup from '../loginSignUpComponent/LoginSignup'
+import { Link } from 'react-router-dom'
+
 
 
 
 function Navbar() {
-  const [action, setAction] = useState('Login')
+  const [action, setAction] = useState('Sign Up')
   return (
     <div>
         <nav className='container'>
@@ -18,9 +19,17 @@ function Navbar() {
                 <li href="#">About</li>
                 <li href="#">Contect</li>
             </ul>
-            <button className={action==="Login"?"nav-btn nav-button":"nav-button"} onClick={()=>{setAction(<LoginSignup/>)}}>Sign Up</button>
+            <Link className={action} onClick={()=>{setAction("Login")}} to='LoginSignup'><button>Login</button></Link>
 
-            <button className={action==="Sign Up"?"nav-btn nav-button":"nav-button"} onClick={()=>{setAction(<LoginSignup/>)}}>Login </button>
+            {/* <Link className={action} onClick={()=>{setAction("Sign Up")}} to='LoginSignup'><button>Sign Up</button></Link> */}
+
+
+            
+            
+            {/* <Link to='LoginSignup'><button>Sign Up</button></Link> */}
+            {/* <button className={action==="Login"?"nav-btn nav-button":"nav-button"} onClick={()=>{setAction("/Login")}}>Sign Up</button>
+
+            <button className={action==="Sign Up"?"nav-btn nav-button":"nav-button"} onClick={()=>{setAction("/Login")}}>Login </button> */}
             
         </nav>
     </div>
