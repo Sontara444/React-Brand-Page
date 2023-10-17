@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import './HeroSection.css'
 
 function HeroSection() {
-  const [action, setAction] = useState("")
+  const [action, setAction] = useState("Shop Now")
   return (
     <main className="hero container">
       <div className="hero-content">
@@ -13,8 +14,8 @@ function HeroSection() {
         </p>
 
         <div className="hero-btn">
-          <button className="primary-btn">Shop Now</button>
-          <button className="secondary-btn" >Category</button>
+          <button className={action==="Category"?"primary-btn secondary-btn" : "primary-btn"} onClick={()=>{setAction('Shop Now')}}>Shop Now</button>
+          <button className={action==="Shop Now"?"primary-btn secondary-btn" :"primary-btn" } onClick={()=>{setAction('Category')}} >Category</button>
         </div>
         <div className="shopping">
           <p> Also Available On</p>
